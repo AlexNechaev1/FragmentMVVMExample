@@ -1,6 +1,7 @@
 package com.example.fragmentmvvmexample;
 
 
+import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
@@ -14,7 +15,7 @@ public class UpdatedTextViewModel extends ViewModel {
         updatedTextLiveData.setValue(text);
     }
 
-    public MutableLiveData<String> getUpdatedTextMutableLiveData(){
+    public LiveData<String> getUpdatedTextMutableLiveData(){
         return updatedTextLiveData;
     }
 }
